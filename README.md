@@ -46,6 +46,7 @@ Here's my .htaccess file, it does two things:
 * Allows the file robots.txt to be requested; search engines are happy and know not to bother indexing this site.
 * Rewrites any URL in the form http://mysite.com/short to http://mysite.com/?short
 
+```
     <IfModule mod_rewrite.c>
       RewriteEngine On
       RewriteBase /
@@ -56,6 +57,7 @@ Here's my .htaccess file, it does two things:
       RewriteCond %{REQUEST_FILENAME} !-l
       RewriteRule ^(.*)$ http://mysite.com/?$1 [L]
    </IfModule>
+```
 
 ## Main PHP link shortener script
 
