@@ -34,7 +34,8 @@ My MySQL database table looks like this:
     ) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=latin1 ;
 
 The column names for the table should, I hope, be self explanatory.  I decided that it would be useful to know how many times a given short link was requested, so that's what the count column is for.
-Back-end administrator
+
+##Back-end administrator
 
 So, having decided to use a mySQL database to store the links, I decided that for the back-end I'd just use phpMyAdmin to do the job (or one could just use the command line mySQL console, or another tool).  Job done! ;)
 
