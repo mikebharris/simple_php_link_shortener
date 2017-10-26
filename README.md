@@ -1,4 +1,4 @@
-[Copied from original published at http://mbharris.co.uk/content/very-simple-php-link-shortener-simplifier](http://mbharris.co.uk/content/very-simple-php-link-shortener-simplifier)
+# PHP Link Shortener
 
 There's lots of web sites that provide link shorteners (bit.ly, tinyurl.com, imc.li, tiny.booki.cc; to name but a few).  In the past I'd always used tinyurl.com, but then I started working on a project to provide a book of useful technical tips for political activists and grassroots campaigners and some people on the project were concerned about the security implications of third parties logging the redirects, having to have a named account in order to edit the links and the potential of the links being taken down due to policy or petition.  The commercial offerings were therefore not fit for purpose for this project.
 
@@ -12,14 +12,14 @@ I realised that providing for the administration side of it was going to be more
 
 I therefore came up with this feature list:
 
-*     Use query strings, for URLs likle /?shortlink
-*     Accept URLs with or without a proceding question mark, so /shortlink is also allowed.
-*     If there is no entry for the short link then return a 404 Not Found error.
-*     If robots.txt is requested, provide it.
-*     In any other case redirect to another web site.
-*     No flashy admininistrator, as I haven't got time to write one!
-*     No need for a home page: noone has to know about it (at least for now).
-*     Keep track of the count of hits for each shortened/simplified URL.
+* Use query strings, for URLs likle /?shortlink
+* Accept URLs with or without a proceding question mark, so /shortlink is also allowed.
+* If there is no entry for the short link then return a 404 Not Found error.
+* If robots.txt is requested, provide it.
+* In any other case redirect to another web site.
+* No flashy admininistrator, as I haven't got time to write one!
+* No need for a home page: noone has to know about it (at least for now).
+* Keep track of the count of hits for each shortened/simplified URL.
 
 ## Database
 
