@@ -135,8 +135,8 @@ And that's all there is to it.  I works fine and I'm happy with phpMyAdmin to ad
 
 Here's a summary list of the technology employed:
 
-*     One single PHP script.
-*     One single .htaccess file in Apache.
-*     One single mySQL database table.
-*     One single robots.txt file (optional).
-*     phpMyAdmin or mySQL console for adminsitration.
+* One single PHP script.
+* One single .htaccess file in Apache.
+* One single mySQL database table (could be Postgres, or a noSQL database of course).
+* One single robots.txt file (optional).
+* phpMyAdmin or mySQL console for adminsitration.
