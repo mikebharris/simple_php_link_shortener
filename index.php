@@ -30,7 +30,7 @@ if (isset($_SERVER["QUERY_STRING"]) && ($_SERVER["QUERY_STRING"] != '')) {
   }
 
   $link = $result->fetch_array(MYSQLI_ASSOC);
-  $query = "UPDATE short_links SET count = count + 1, last_request = NOW() WHERE id = " . $link["id"];
+  $query = sprintf("UPDATE short_links SET count = count + 1, last_request = NOW() WHERE id = ''%s''", $link["id"]);
 
   $result = $mysqli->query($query);
 
