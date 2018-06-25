@@ -2,7 +2,7 @@
 
 $DEFAULT_REDIRECT = "https://someothersite.org";
 
-$mysqli = new mysqli("127.0.0.1", "db", "db_password", "db");
+$mysqli = new mysqli("127.0.0.1", "db_username", "db_password", "db_name");
 
 if ($mysqli->connect_errno) {
 	printf("Connect failed: %s\n", $mysqli->connect_error);
