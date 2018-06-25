@@ -19,7 +19,7 @@ if (isset($_SERVER["QUERY_STRING"]) && ($_SERVER["QUERY_STRING"] != '')) {
 
   if (!$result)  {
     // query failed
-    error_log("Sent an error 404 having executed query $query and got an error of " . mysql_error());
+    error_log("Sent an error 404 having executed query $query and got an error of " . $mysqli->error());
     $fail = 1;
   }
 
@@ -36,7 +36,7 @@ if (isset($_SERVER["QUERY_STRING"]) && ($_SERVER["QUERY_STRING"] != '')) {
 
   if (!$result)  {
     // query failed updating db (this really shouldn't occur ever
-    error_log("Sent an error 404 having executed query $query and got an error of " . mysql_error());
+    error_log("Sent an error 404 having executed query $query and got an error of " . $mysqli->error());
     $fail = 1;
   }
 
